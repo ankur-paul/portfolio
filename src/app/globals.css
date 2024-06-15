@@ -6,6 +6,9 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -26,8 +29,155 @@ body {
     rgb(var(--background-start-rgb));
 }
 
+body,
+html {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+  font: 62.5%;
+  scroll-behavior: smooth;
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+}
+
+.flip-words {
+  font-family: inherit !important;
+  margin: 0px !important;
+}
+
+.parent {
+  height: 100vh;
+  overflow-y: auto;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+}
+
+.container {
+  max-width: 1250px;
+  padding: 32px;
+  min-height: 100vh;
+  margin: 0 auto;
+  position: relative;
+  scroll-snap-align: start;
+}
+
+.hi-msg {
+  font-size: 75px;
+  text-align: start;
+  font-weight: 700;
+  margin: 240px 0 6px;
+}
+
+svg {
+  width: 45px;
+  height: 45px;
+  margin: 2.5px;
+}
+
+.btn-linkedin {
+  font-size: 22px;
+}
+
+.mouse {
+  width: 50px;
+  height: 90px;
+  border: 3px solid #817f7f;
+  border-radius: 60px;
+  position: absolute; /* Change to fixed */
+  bottom: 24px; /* Position it at the bottom */
+  left: 50%; /* Center it horizontally */
+  transform: translateX(-50%); /* Center alignment adjustment */
+  /* margin: 0 auto 42px; */
+}
+
+.mouse::before {
+  content: "";
+
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333;
+  border-radius: 50%;
+  opacity: 1;
+  animation: wheel 2s infinite;
+  -webkit-animation: wheel 2s infinite;
+}
+
+@keyframes wheel {
+  to {
+    opacity: 0;
+    top: 60px;
+  }
+}
+
+@-webkit-keyframes wheel {
+  to {
+    opacity: 0;
+    top: 60px;
+  }
+}
+
+.footer {
+  position: absolute;
+  padding: 16px;
+  bottom: 16px;
+  text-align: center;
+  font-size: 12px;
+  color: #524f4f;
+  left: 50%;
+  transform: translate(-50%);
+  line-height: 24px;
+}
+
+.footer a {
+  text-decoration: underline;
+  text-underline-offset: 2.5px;
+}
+
+.footer p:last-child {
+  display: flex;
+  gap: 10px;
+}
+
+@media (max-width: 765px) {
+  html,
+  body {
+    font-size: 50%;
+    scroll-behavior: smooth;
+  }
+
+  .hi-msg {
+    margin-top: 64px;
+    margin-bottom: 0px;
+    line-height: 1.2;
+  }
+
+  .hi-msg span {
+    display: inline-block;
+  }
+
+  .btn-linkedin {
+    padding: 7px 24px;
+    font-size: 18px;
+  }
+  .linkedin {
+    margin: 25px 0 0 0;
+  }
+
+  .footer {
+    display: none;
+  }
+}
+
+@media (max-width: 409px) {
+  .hi-msg span {
+    display: inline;
   }
 }

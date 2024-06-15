@@ -8,7 +8,7 @@ export default function Home() {
       <div className="container">
         <div className="intro">
           <div className="hi-msg">
-            Hi, <span>I am Ankur</span>
+            Hi, <span>I&apos;m Ankur</span>
           </div>
           <Flipwords />
           <button className="linkedin mt-6 relative inline-flex h-22 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">

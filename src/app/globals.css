@@ -149,7 +149,6 @@ svg {
 @media (max-width: 765px) {
   html,
   body {
-    font-size: 50%;
     scroll-behavior: smooth;
   }
 

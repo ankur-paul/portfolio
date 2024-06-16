@@ -190,6 +190,15 @@ export default function Home() {
       </div>
       <div className="section--form container">
         <Form />
+        <form
+          action="/success"
+          method="POST"
+          name="contact-form"
+          data-netlify="true"
+        >
+          <input type="text" className="text-gray-400" name="some" id="some" />
+          <button type="submit">send</button>
+        </form>
         <div className="footer">
           <p>
             Built by{" "}

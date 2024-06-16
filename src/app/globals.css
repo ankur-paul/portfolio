@@ -65,6 +65,27 @@ html {
   scroll-snap-align: start;
 }
 
+.projects {
+  padding: 120px 0;
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+  max-height: 100vh;
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.projects-item {
+  /* width: 100%; */
+  height: auto;
+
+  border: solid 2px grey;
+}
+
+.header {
+  overflow: hidden;
+}
 .hi-msg {
   font-size: 75px;
   text-align: start;
@@ -146,10 +167,22 @@ svg {
   gap: 10px;
 }
 
-@media (max-width: 765px) {
+@media (max-width: 677px) {
   html,
   body {
     scroll-behavior: smooth;
+  }
+
+  .projects {
+    padding: 68px 0;
+    height: 100vh;
+    gap: 9px;
+    overflow-y: scroll;
+    align-items: center;
+  }
+
+  .projects-item {
+    height: 100%;
   }
 
   .hi-msg {
@@ -170,8 +203,15 @@ svg {
     margin: 25px 0 0 0;
   }
 
-  .footer {
-    display: none;
+  .mouse {
+    width: 37.5px;
+    height: 67.5px;
+    margin-bottom: 90px;
+  }
+
+  .mouse::before {
+    width: 9px;
+    height: 9px;
   }
 }
 

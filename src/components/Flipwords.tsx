@@ -10,7 +10,7 @@ export function FlipWordsDemo() {
 
   return (
     <div className="flip-text">
-      <div className="text-4xl mx-auto font-normal text-neutral-600 dark:text-neutral-400">
+      <div className="text-3xl md:text-4xl mx-auto font-normal text-neutral-600 dark:text-neutral-400">
         I build websites that are
         <FlipWords words={words} />
       </div>

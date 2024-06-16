@@ -8,6 +8,7 @@ export default function htmlForm() {
       action="/success"
       data-netlify="true"
     >
+      <input type="hidden" name="form-name" value="contact" />
       <h1 className="text-2xl pb-8 font-bold dark:text-gray-300">Contact Me</h1>
       <div className="grid md:grid-cols-2 md:gap-6">
         <div className="relative z-0 w-full mb-5 group">

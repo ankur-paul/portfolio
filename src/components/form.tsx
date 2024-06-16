@@ -4,12 +4,9 @@ export default function htmlForm() {
     <form
       className="max-w-md mx-auto pt-24"
       name="contact"
-      method="POST"
-      action="/success"
+      method="post"
       data-netlify="true"
     >
-      <input type="hidden" name="form-name" value="contact" />
-      <h1 className="text-2xl pb-8 font-bold dark:text-gray-300">Contact Me</h1>
       <div className="grid md:grid-cols-2 md:gap-6">
         <div className="relative z-0 w-full mb-5 group">
           <input
@@ -70,6 +67,7 @@ export default function htmlForm() {
           id="message"
           className="h-[125px] resize-none block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
           placeholder="Leave a comment..."
+          name="message"
         ></textarea>
       </div>
 

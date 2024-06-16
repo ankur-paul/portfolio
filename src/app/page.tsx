@@ -1,18 +1,11 @@
 import Image from "next/image";
 import Flipwords from "@/components/Flipwords";
-import SparklesPreview from "@/components/sparklesHandle";
-import { cn } from "@/utils/cn";
-import ThemeSwitch from "@/components/ThemeSwitch";
-// import BentoGridDemo from "@/components/bentoGrid";
 import Form from "@/components/form";
 export default function Home() {
   return (
-    <div className="parent dark:bg-black">
+    <div className="parent dark:bg-black ">
       <div className="container">
         <div className="intro">
-          <div className="theme-btn dark:text-white">
-            <ThemeSwitch />
-          </div>
           <div className="hi-msg dark:text-white">
             Hi, <span>I&apos;m Ankur</span>
           </div>

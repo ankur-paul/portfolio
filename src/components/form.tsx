@@ -4,8 +4,8 @@ export default function htmlForm() {
     <form
       className="max-w-md mx-auto pt-24"
       name="contact"
-      method="post"
-      data-netlify="true"
+      action="https://formspree.io/f/xeqyynor"
+      method="POST"
     >
       <div className="grid md:grid-cols-2 md:gap-6">
         <div className="relative z-0 w-full mb-5 group">

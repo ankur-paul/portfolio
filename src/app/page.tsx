@@ -1,14 +1,19 @@
 import Image from "next/image";
 import Flipwords from "@/components/Flipwords";
+import SparklesPreview from "@/components/sparklesHandle";
 import { cn } from "@/utils/cn";
+import ThemeSwitch from "@/components/ThemeSwitch";
 // import BentoGridDemo from "@/components/bentoGrid";
 import Form from "@/components/form";
 export default function Home() {
   return (
-    <div className="parent">
+    <div className="parent dark:bg-black">
       <div className="container">
         <div className="intro">
-          <div className="hi-msg">
+          <div className="theme-btn dark:text-white">
+            <ThemeSwitch />
+          </div>
+          <div className="hi-msg dark:text-white">
             Hi, <span>I&apos;m Ankur</span>
           </div>
           <Flipwords />
@@ -39,7 +44,7 @@ export default function Home() {
         </div>
       </div>
       <div className="container">
-        <div className="projects">
+        <div className="projects hide-scrollbar">
           <div className="projects-item rounded-xl hover:shadow-xl transition duration-200 shadow-input dark:shadow-none p-4 dark:bg-black dark:border-white/[0.2] bg-white border border-transparent ">
             <div className="header rounded-xl hover:shadow-xl transition duration-200 shadow-input dark:shadow-none dark:bg-black dark:border-white/[0.2] bg-white border border-transparent ">
               <Image
@@ -189,13 +194,14 @@ export default function Home() {
         </div>
       </div>
       <div className="section--form container">
+        {/* <SparklesPreview /> */}
         <Form />
         <div className="footer">
           <p>
             Built by{" "}
             <a href="https://linkedin.com/in/ankurpaul52">Ankur Paul</a>
           </p>
-          <p>
+          <p className="social-links">
             <a href="https://github.com/ankur-paul" target="_blank">
               GitHub
             </a>{" "}

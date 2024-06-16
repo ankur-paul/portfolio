@@ -1,12 +1,14 @@
 "use-client";
+import SparklesPreview from "./sparklesHandle";
 export default function htmlForm() {
   return (
     <form
-      className="max-w-md mx-auto pt-24"
+      className="max-w-md mx-auto pt-12"
       name="contact"
       action="https://formspree.io/f/xeqyynor"
       method="POST"
     >
+      <SparklesPreview />
       <div className="grid md:grid-cols-2 md:gap-6">
         <div className="relative z-0 w-full mb-5 group">
           <input

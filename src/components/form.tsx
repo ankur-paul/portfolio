@@ -1,6 +1,11 @@
 export default function htmlForm() {
   return (
-    <form className="max-w-md mx-auto pt-24" data-netlify="true">
+    <form
+      name="contact"
+      method="POST"
+      className="max-w-md mx-auto pt-24"
+      data-netlify="true"
+    >
       <h1 className="text-2xl pb-8 font-bold dark:text-gray-300">Contact Me</h1>
       <div className="grid md:grid-cols-2 md:gap-6">
         <div className="relative z-0 w-full mb-5 group">

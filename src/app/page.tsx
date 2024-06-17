@@ -42,7 +42,7 @@ export default function Home() {
       </div>
       <div className="container">
         <div className="title--my-work">
-          <h2 className="font-bold text-4xl text-left text-slate-900 dark:text-white relative pt-4">
+          <h2 className="font-bold text-4xl text-left text-slate-900 dark:text-white relative pt-4 pb-4">
             {" "}
             My Work 😊
           </h2>

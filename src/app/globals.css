@@ -202,7 +202,7 @@ svg {
   }
 
   .projects {
-    padding: 68px 0;
+    padding: 0;
     height: 100vh;
     gap: 9px;
     overflow-y: scroll;

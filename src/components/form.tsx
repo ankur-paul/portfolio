@@ -3,7 +3,7 @@ import SparklesPreview from "./sparklesHandle";
 export default function htmlForm() {
   return (
     <form
-      className="md:max-w-md mx-auto pt-6 md:pt-12"
+      className="md:max-w-md mx-auto pt-2.5 md:pt-12"
       name="contact"
       action="https://formspree.io/f/xeqyynor"
       method="POST"
